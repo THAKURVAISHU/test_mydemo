@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>calculator</title>
+</head>
+<body>
+<div class="cal">
+<h1>simple calculator</h1>
+<div class="up">
+<input type="text" id="screen"  placeholder="0" >
+</div>
+<div class="middle">
+<button id="first" onclick="reset();">C</button>
+<button id="first" onclick="updateTextbox('%')">%</button>
+<button id="first" onclick="updateTextbox('00')">00</button>
+<button id="first" onclick="updateTextbox('/')" class="op">&#xF7;</button>
+</div>
+<div class="lower">
+    <button onclick="updateTextbox('7')">7</button>
+    <button onclick="updateTextbox('8')">8</button>
+    <button onclick="updateTextbox('9')">9</button>
+    <button onclick="updateTextbox('*')" class="op">x</button>
+
+    <button onclick="updateTextbox('4')">4</button>
+    <button onclick="updateTextbox('5')">5</button>
+    <button onclick="updateTextbox('6')">6</button>
+    <button onclick="updateTextbox('-')" class="op">-</button>
+
+    <button onclick="updateTextbox('1')">1</button>
+    <button onclick="updateTextbox('2')">2</button>
+    <button onclick="updateTextbox('3')">3</button>
+    <button onclick="updateTextbox('+')" class="op">+</button>
+</div>
+<div class="down">
+    <button onclick="updateTextbox('0');">0</button>
+    <button onclick="updateTextbox('.');">.</button>
+    <button class="equal"onclick="result ('=')">=</button>
+
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="cal.js"></script>  
+</body>
+</html>
